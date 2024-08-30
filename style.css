@@ -1,0 +1,128 @@
+:root {
+    --azulDegrade: linear-gradient(to bottom, #000000, #131730, #232e74);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--azulDegrade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#newItemInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover {
+    background-color: #FF4C41;
+}
+
+.listTitle {
+    font-size: 20px;
+    color: #FF6F61;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    position: relative;
+}
+
+.listTitle::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: transparent;
+    border-bottom: 2px dotted #FF6F61;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boughtTitle {
+    color: #FF6F61;
+}
+
+.itemList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.itemList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.itemList li .actionIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.itemList li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.itemList li.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.itemList li.checked label {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.itemList li label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.actionIcons {
+    font-size: 14px;
+}

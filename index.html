@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Banner -->
+        <div class="margem">
+            <img src="assets/Logo.svg" alt="Logo da Lista de Compras" class="margem">
+        </div>
+
+        <!-- Input de Novo Item -->
+        <div class="inputContainer">
+            <input type="text" id="newItemInput" placeholder="Digite o item que deseja adicionar" aria-label="Novo item">
+            <button class="botao" id="botao">Salvar item</button>
+        </div>
+
+        <!-- Lista de Compras -->
+        <section class="lista">
+            <h2 class="listTitle">Lista de Compras</h2>
+            <ul class="itemList" id="shoppingList">
+                <li>
+                    <input type="checkbox" id="itemQueijoMinas">
+                    <label for="itemQueijoMinas">Queijo Minas</label>
+                    <div class="actionIcons">
+                        <button class="edit"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="delete"><img src="assets/excluir.svg"  alt="Excluir"></button>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="itemLeiteIntegral">
+                    <label for="itemLeiteIntegral">Leite Integral</label>
+                    <div class="actionIcons">
+                        <button class="edit"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="delete"><img src="assets/excluir.svg"  alt="Excluir"></button>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="itemMamaoPapaia">
+                    <label for="itemMamaoPapaia">Mamão Papaia</label>
+                    <div class="actionIcons">
+                        <button class="edit"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="delete"><img src="assets/excluir.svg"  alt="Excluir"></button>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="itemPaoFrances">
+                    <label for="itemPaoFrances">Pão Francês</label>
+                    <div class="actionIcons">
+                        <button class="edit"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="delete"><img src="assets/excluir.svg" alt="Excluir"></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Lista de Comprados -->
+        <section class="lista">
+            <h2 class="listTitle boughtTitle">Comprados</h2>
+            <ul class="itemList" id="boughtList">
+                <li class="checked">
+                    <input type="checkbox" id="itemEsponjaDeLouca" checked>
+                    <label for="itemEsponjaDeLouca">Esponja de Louça</label>
+                    <div class="actions">
+                        <button class="editBtn"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="deleteBtn"><img src="assets/excluir.svg"  alt="Excluir"></button>
+                    </div>
+                </li>
+                <li class="checked">
+                    <input type="checkbox" id="itemCacauEmPo" checked>
+                    <label for="itemCacauEmPo">Cacau em Pó</label>
+                    <div class="actions">
+                        <button class="editBtn"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="deleteBtn"><img src="assets/excluir.svg"  alt="Excluir"></button>
+                    </div>
+                </li>
+                <li class="checked">
+                    <input type="checkbox" id="itemAveiaEmFlocos" checked>
+                    <label for="itemAveiaEmFlocos">Aveia em Flocos</label>
+                    <div class="actions">
+                        <button class="editBtn"><img src="assets/Edição.svg" alt="Editar"></button>
+                        <button class="deleteBtn"><img src="assets/excluir.svg"  alt="Excluir"></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
